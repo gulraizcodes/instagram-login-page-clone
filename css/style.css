@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fafafa;
+  border: 3px solid #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.container {
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-;
+}
+
+.__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation: fade 20s infinite;
+}
+
+.content .__form .__login .__name {
+  margin-bottom: 50px;
+}
+
+.content .__form .__login img {
+  width: 140px;
+}
+
+.content .__form .__login {
+  /* position: fixed; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.__form .__login {
+  width: 370px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #cacaca;
+  padding: 30px;
+  margin: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 13px;
+  outline: none;
+  font-size: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  color: rgb(66, 66, 66);
+
+  border: 1px solid #b4b4b4;
+  outline: none;
+}
+
+.__input:focus {
+  border: 1px solid #575656;
+}
+
+/* ============= BUTTON ================ */
+
+button {
+  margin-bottom: 20px;
+  padding: 10px 140px;
+  background-color: #0095f6;
+  border: none;
+  border-radius: 3px;
+  color: #f1f1f1;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+/* =========== ------ or --------- ========== */
+.__OR {
+  display: flex;
+  align-items: center;
+}
+
+.__OR .left-line {
+  margin-right: 20px;
+  width: 100px;
+  height: 1px;
+  background-color: #202020;
+}
+
+.__OR .right-line {
+  margin-left: 20px;
+  width: 100px;
+  height: 1px;
+  background-color: #202020;
+}
+
+/* ========== SIGN IN WITH FACEBOOK ========= */
+
+._fb {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #202020;
+  font-weight: inherit;
+}
+
+.fb {
+  margin-right: 10px;
+  font-size: 20px;
+  align-items: center;
+  color: #3b5998;
+}
+
+/* ========== FORGOT PASSWORD ========== */
+
+.forgot {
+  margin: 5px;
+  font-size: 12px;
+  color: #202020;
+}
+
+/* ========== SIGN UP ========= */
+
+.__signup {
+  width: 370px;
+  height: 60px;
+  font-size: 15px;
+  border: 1px solid #cacaca;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+}
+
+.__signup span a {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+/* ========== GET THE APP ========== */
+
+p {
+  margin: 17px 0px;
+  font-size: 13px;
+}
+
+/* ========== DOWNLOAD BUTTON ========== */
+
+.__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.__buttons img {
+  margin: 5px;
+}
+
+
+/* ============== MOBILE RESPONSIVE =========== */
+
+@media screen and (max-width: 775px) {
+    .content .__phone{
+        display: none;
+    }
+
+    .content{
+        display: grid;
+        place-items: center;
+    }
+}
